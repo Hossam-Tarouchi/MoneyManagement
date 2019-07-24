@@ -1,0 +1,19 @@
+{
+  "name": "mymoneymanagement",
+  "version": "1.0.0",
+  "description": "A simple RESTful API to help me managing my money :D",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RESTful",
+    "API",
+    "Management",
+    "Money",
+    "Managing",
+    "Budget"
+  ],
+  "author": "Hossam Tarouchi",
+  "license": "ISC"
+}
