@@ -3,12 +3,18 @@ const express = require('express');
 //importing spends routes
 const spendsRoutes = require('./api/routes/spends');
 
+const bodyParser = require('body-parser');
+
 //Morgan will help us to log some informations in the console about ht eincoming request
 const morgan = require('morgan');
 
 const app = express();
 
 app.use(morgan('dev'));
+
+app.use(bodyParser.urlencoded({extended: false})); //Handling data coming from UrlEncoded
+app.use(bodyParser.json()); //Handling data coming as a raw json
+
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
